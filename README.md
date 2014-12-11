@@ -1,5 +1,6 @@
 Meteor-Mongo-Collections
 ========================
+https://atmospherejs.com/laboratory/mongo-collection
 
 Mongo.Collections instances
 
