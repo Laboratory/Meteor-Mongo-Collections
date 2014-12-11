@@ -1,7 +1,7 @@
 Package.describe({
   name: 'laboratory:mongo-collection',
-  summary: ' Mongo.Collections instances by Collection name ',
-  version: '1.0.0',
+  summary: 'Mongo.Collections instances by Collection name',
+  version: '1.0.1',
   git: 'https://github.com/Laboratory/Meteor-Mongo-Collections.git'
 });
 
