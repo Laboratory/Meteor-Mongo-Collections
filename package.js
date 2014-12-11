@@ -9,7 +9,7 @@ Package.onUse(function (api) {
   api.versionsFrom('1.0');
   api.addFiles('mongo-collection.coffee');
   api.use('coffeescript', ['client', 'server']);
-  api.use('mongo')
+  api.use('mongo');
 });
 
 Package.onTest(function (api) {
