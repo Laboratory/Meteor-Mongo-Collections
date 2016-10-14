@@ -12,7 +12,7 @@ do ->
     constructor: (name, options = {}) ->
       endPoint = options.connection?._lastSessionId or ''
       #get created collecton
-      collectionName = "#{endPoint}_name"
+      collectionName = "#{endPoint}_#{name}"
       collection = @instances[collectionName]
       #return collection if collection exist
       return collection if !!collection
