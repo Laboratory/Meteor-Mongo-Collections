@@ -9,12 +9,14 @@ do ->
     instances: {
       users: Meteor.users
     }
-    constructor: (name, options) ->
+    constructor: (name, options = {}) ->
+      endPoint = options.connection?._lastSessionId or ''
       #get created collecton
-      collection = @instances[name]
+      collectionName = "#{endPoint}_name"
+      collection = @instances[collectionName]
       #return collection if collection exist
       return collection if !!collection
       #create collection by super consctructor
       super name, options
       #save collection by name
-      @instances[name] = this
+      @instances[collectionName] = this
